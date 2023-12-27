@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 577512057}
   - component: {fileID: 577512056}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -184,7 +184,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f1cb496c6d6c1ae4889e9d8f0736ac41, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -323,11 +323,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!4 &710126693 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 173707065500893070, guid: 69900802ec81efb4daeca8e450bda76e, type: 3}
-  m_PrefabInstance: {fileID: 3368765664112614584}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,11 +409,11 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0901247, y: 0.6900933, z: -0.095216714, w: 0.7117462}
-  m_LocalPosition: {x: -4.63, y: 21.699999, z: 0.02999999}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -8.732481, y: 0.38150594, z: 0.3826041}
+  m_LocalScale: {x: 3.0830925, y: 0.095573165, z: 1.444277}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 710126693}
+  m_Father: {fileID: 1506742489}
   m_LocalEulerAnglesHint: {x: 15.053, y: 88.143, z: -0.662}
 --- !u!1 &1506742485
 GameObject:
@@ -433,7 +428,7 @@ GameObject:
   - component: {fileID: 1506742487}
   - component: {fileID: 1506742486}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: bara
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -482,7 +477,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: bfb572a09518cc144b8c1f1abf903f6a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -524,7 +519,8 @@ Transform:
   m_LocalPosition: {x: 0.2351, y: 5.9032, z: 0}
   m_LocalScale: {x: 1.4702, y: 5.6143994, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 963194228}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3368765664112614584
@@ -549,15 +545,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 173707065500893070, guid: 69900802ec81efb4daeca8e450bda76e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 173707065500893070, guid: 69900802ec81efb4daeca8e450bda76e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 173707065500893070, guid: 69900802ec81efb4daeca8e450bda76e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.29
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 173707065500893070, guid: 69900802ec81efb4daeca8e450bda76e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -591,12 +587,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pisti
       objectReference: {fileID: 0}
+    - target: {fileID: 4489122649279480459, guid: 69900802ec81efb4daeca8e450bda76e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 46dce05be40428e4ab747a40244752e9, type: 2}
+    - target: {fileID: 7728965262417228069, guid: 69900802ec81efb4daeca8e450bda76e, type: 3}
+      propertyPath: xValue
+      value: 0.38
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 173707065500893070, guid: 69900802ec81efb4daeca8e450bda76e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 963194228}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69900802ec81efb4daeca8e450bda76e, type: 3}
 --- !u!1660057539 &9223372036854775807
