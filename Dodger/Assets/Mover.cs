@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
+    float xValue = 0.01f;
+    float yValue = 0.01f;
+    float zValue = 0.01f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,28 +17,28 @@ public class Mover : MonoBehaviour
     void Update()
     {
         if(Input.GetKey(KeyCode.W)){
-            transform.Translate(0.01f,0,0);
+            transform.Translate(xValue,0,0);
         }
         if(Input.GetKey(KeyCode.S)){
-            transform.Translate(-0.01f,0,0);
+            transform.Translate(-xValue,0,0);
         }
         if(Input.GetKey(KeyCode.A)){
-            transform.Translate(0,0,0.01f);
+            transform.Translate(0,0,zValue);
         }
         if(Input.GetKey(KeyCode.D)){
-            transform.Translate(0,0,-0.01f);
+            transform.Translate(0,0,-zValue);
         }
         if(Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D)){
-            transform.Translate(-0.005f,0,0.005f);
+            transform.Translate(-xValue/2,0,zValue/2);
         }
         if(Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A)){
-            transform.Translate(-0.005f,0,-0.005f);
+            transform.Translate(-xValue/2,0,-zValue/2);
         }
         if(Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A)){
-            transform.Translate(0.005f,0,-0.005f);
+            transform.Translate(xValue/2,0,-zValue/2);
         }
         if(Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D)){
-            transform.Translate(0.005f,0,0.005f);
+            transform.Translate(xValue/2,0,zValue/2);
         }
     }
 }
